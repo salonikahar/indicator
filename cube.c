@@ -2,14 +2,15 @@
 
 void cube(int (*arr)[100], int r, int c)
 {
-    printf("Cubes of the elements in the 2D array:\n");
+    printf("Cube of all element:\n");
     for (int i = 0; i < r; i++)
     {
         for (int j = 0; j < c; j++)
         {
             int cube = arr[i][j] * arr[i][j] * arr[i][j];
-            printf("Cube of %d is %d\n", arr[i][j], cube);
+            printf("%d\t", cube);
         }
+        printf("\n");
     }
 }
 
@@ -26,7 +27,8 @@ int main()
     for (int i = 0; i < r; i++)
     {
         for (int j = 0; j < c; j++)
-        {
+        {   
+            printf("a[%d][%d]",i,j);
             scanf("%d", &array[i][j]);
         }
     }
